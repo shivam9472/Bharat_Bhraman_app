@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bharatbhraman-b1cfc",
+  "private_key_id": "f4700704c5a8d8761cb7be13a7c5fbd90fc06eab",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDJx4PJE6ILOdXo\nuJOR5ZaLbuykSE8LsaYU0J3zS4M1KG6wra3Q/uXHk8HgwXuSkujxcvlKFI+E8Q7H\nOuCI1671taRyhl+L78UxV40xYcMqVp6IgDiYuTnMT/ANqrGyCTx+3REuAv4gA4S3\nS7Mx4MGfnnoWvlsd5sj0ZJq2nrh8pImWXJczM+hWXSttkQ6CHAehYPHb95a6rZ6Y\n/6gFuqOB4tv8Hn3AUt+gqkiTNElexb4SOTzzwAd05gjA5WewzrN7bH9SplL3D/j/\nsrXq8HiQZ6PvfSm/tNrSQMUqOlh+f5oobs/nO9GMQF2cr3JCPbxfvwvOgjyXIJN4\nQpJZpXtBAgMBAAECggEAS8Aymdzcg0FhrF4KzIV4GH16qowY3MeDFaJiAdHx/pVg\nxMRXEjR3WA8BBJsuhI7Rk795lhWU8bA7v5C7dbQfE1BvXa1TlmnbylPXhlfw2Gav\nWohkdvVmnOzPrpnL3w43n1rn1bG67JLVkqiBK/L4Ta/Fnt80vsuC2rkgGfoJQYUr\nGN123NWqNeUnBUfNOQ8KfUcpAHryEJFnaFJaBFYWjbhiM0uBQzxQDVChZu1YtXgw\n1GtGDqzXZjjUkXdNfqmHG5cDUmYNqjVRRylbTax0Luc/gHgLR4SilZfajwtA3NWW\nc/DfLDtj9YCV517hfOfEFTyvEcxipS0a6ojyD8DQRwKBgQDkr2CuomOMlN4yaI26\nJxRQtdhrGrlAaerlwtBu30q8+Pzi2JtzsXvHgkWH64byyho0eOghr+iTdugxGL+4\n36bycoXV9+7N8eWIWefZ+Y3zUwpKF49/DOGbPUAnusXSUEVSlhnXXZ9HzsYJtBka\nxZaFA/Pf0s2r+QsYXypvBC7+CwKBgQDh4W1WIfa0pom6Kd0/QXJW6i8uROIZ81mQ\nW9g+fxI6/oxwVORYsla5dStogMZ8WQI6ok+WbgejUu47WswvOcxifQEUsDSyU31i\nQfhtpjtc1qb1AuaRZz0g+n5frBZSv2TT82BOUhhFyTrXrZ/OfHfs78VnfAqWytFV\nCkoUxRrXYwKBgQDVe1MKM9Yy2pZDAI+uA+VXIysRcTUXCMmcC62Akzq2BsotCoC0\nFC+1I8u9AwZLiJfF/EjXidvYLdy8WJpB/6deFcMS6A0qfHMGQsfKGMmHKTIl0LDI\nrkG+JgPKEvWxS/YrDqy4/FFBO6psTJBTCblmGzaC78vIiwjsi4qVcJZd2QKBgHq0\nzYKm/LBycAtTxr8gPI7+tRa7kOBsFFGZs0VwHmUx9vTnCQ0uBHLHNgeVPT471Dwq\nBHZB26Bb4tMXpihZi7BNHBMzDc16EXkZQW2/iiwK57PeGYcPwGNz8MbkY1QcaRfC\n9KRXcJwojvCvf0razwNF1cU72zzDfShnaIsT8FrlAoGBAI41xYvkUGNVs/k+Glj8\ng8pWfiUBKQLEb/UQ5ikntIHRaX175nt+p56wBL9YVNjqqaqXwZTTaHnakQRIx+Y+\nLvp3kkk5+o2yshwczpeaSse0AZTuHi5WJGk5YQj1bwT/VR+lQAevfKtI1pBbTUAX\n9F65jQ6XFZl3vZUoRfFfEhiU\n-----END PRIVATE KEY-----\n",
+  "client_email": "aadrikachatbot@bharatbhraman-b1cfc.iam.gserviceaccount.com",
+  "client_id": "109080286277320936587",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/aadrikachatbot%40bharatbhraman-b1cfc.iam.gserviceaccount.com"
+}
