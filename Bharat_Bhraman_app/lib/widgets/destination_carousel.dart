@@ -52,7 +52,7 @@ class DestinationCarousel extends StatelessWidget {
                       Positioned(
                         bottom: 10.0,
                         child: Container(
-                          height: 80.0,
+                          height: 100.0,
                           width: 200.0,
                           decoration: BoxDecoration(
                             color: Colors.white,
