@@ -101,7 +101,9 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       child: Scaffold(
         floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.message),
+          child: Image(
+            image: AssetImage('assets/robot.png'),
+          ),
           onPressed: () => Navigator.of(context)
               .push(MaterialPageRoute(builder: (ctx) => Chatbotscreen())),
         ),
