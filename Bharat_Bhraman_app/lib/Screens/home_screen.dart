@@ -20,6 +20,7 @@ import '../widgets/handicrafts_carousel.dart';
 import '../widgets/festivals_carousel.dart';
 import '../widgets/performing_arts_carousel.dart';
 import '../widgets/events_carousel.dart';
+import '../widgets/main_drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -97,35 +98,23 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           title: Text("Bharat Bhraman"),
           actions: [
-            FlatButton(
-              child: Text('horders'),
-              onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (ctx) => DestinationOrderScreen(
-                        uid: widget.uid,
-                      ))),
-            ),
-            FlatButton(
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (ctx) => ProfileLandingpage(
-                          uid: widget.uid,
-                        )));
-              },
-              child: Text("Profile"),
-            ),
-            FlatButton(
+//            FlatButton(
+//              child: Text('horders'),
+//              onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+//                  builder: (ctx) => DestinationOrderScreen(
+//                        uid: widget.uid,
+//                      ))),
+//            ),
+
+            IconButton(
+
               onPressed: () => _confirmSignOut(context),
-              child: Text("Logout"),
+              icon: Icon(Icons.logout),
             ),
-            FlatButton(
-              onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (ctx) => OrderScreen(
-                        uid: widget.uid,
-                      ))),
-              child: Text("Order"),
-            )
+
           ],
         ),
+        drawer: MainDrawer(uid: widget.uid),
         body: SafeArea(
           child: ListView(
             padding: EdgeInsets.symmetric(vertical: 20),
