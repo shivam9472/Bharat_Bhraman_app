@@ -31,7 +31,7 @@ class _DestinationOrderScreenState extends State<DestinationOrderScreen> {
     final size = MediaQuery.of(context).size;
     return Scaffold(
         appBar: AppBar(
-          title: Text("Orders"),
+          title: Text("Tickets Booked"),
         ),
         body: StreamBuilder<List<Destinationorder>>(
             stream: readEntries(),
@@ -42,21 +42,51 @@ class _DestinationOrderScreenState extends State<DestinationOrderScreen> {
                   return snapshot.data.length != 0
                       ? ListTile(
                           leading: Container(
+                            height: 100,
                             margin: EdgeInsets.symmetric(vertical: 5),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(50),
                               child: Image.network(
                                 snapshot.data[i].imageurl,
                                 fit: BoxFit.fill,
-                                height: 50,
+                                height: 200,
                                 width: 50,
                               ),
                             ),
                           ),
-                          title: Text(snapshot.data[i].city),
-                          subtitle: Text(
-                              "No Of Person :${snapshot.data[i].noofperson}\nPicked Date:${snapshot.data[i].pickeddate}\ntransactionid:${snapshot.data[i].paymentid}"),
-                          trailing: Text(snapshot.data[i].amount),
+                          title: Text(snapshot.data[i].city,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                          subtitle: Column(
+                            children: [
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.person),
+                                  Text('Number of Persons = ',style: TextStyle(fontSize: 15),),
+                                  Text(
+                                      "${snapshot.data[i].noofperson}"),
+                                ],
+                              ),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.attach_money),
+                                  Text('Amount =  ',style: TextStyle(fontSize: 15),),
+                                  Text(
+                                      "${snapshot.data[i].amount}"),
+                                ],
+                              ),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.date_range),
+                                  Text('Booked On  ',style: TextStyle(fontSize: 15),),
+                                  Text(
+                                      "${snapshot.data[i].pickeddate}"),
+                                ],
+                              ),
+                            ],
+                          ),
+//                          trailing: Text(snapshot.data[i].amount),
                         )
                       : Container(
                           height: size.height,
