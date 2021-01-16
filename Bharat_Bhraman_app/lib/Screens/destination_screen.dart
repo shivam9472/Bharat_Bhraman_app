@@ -15,7 +15,6 @@ import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 import 'package:date_format/date_format.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-
 class DestinationScreen extends StatefulWidget {
   final Destination destination;
   final String uid;
@@ -38,7 +37,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
     stars.trim();
     return Text(stars);
   }
-  
+
   _launchURL(String mapkaurl) async {
     String url = mapkaurl;
     if (await canLaunch(url)) {
@@ -90,9 +89,6 @@ class _DestinationScreenState extends State<DestinationScreen> {
                       color: Colors.black,
                       onPressed: () => Navigator.pop(context),
                     ),
-                   
-                  
-                
                   ],
                 ),
               ),
@@ -134,11 +130,13 @@ class _DestinationScreenState extends State<DestinationScreen> {
               Positioned(
                 right: 20.0,
                 bottom: 20.0,
-                child: Icon(
-                  Icons.location_on,
-                  color: Colors.white70,
-                   onPressed: () => _launchURL(widget.destination.mapUrl),
-                  size: 25.0,
+                child: IconButton(
+                  icon: Icon(
+                    Icons.location_on,
+                    color: Colors.white70,
+                    size: 25.0,
+                  ),
+                  onPressed: () => _launchURL(widget.destination.mapUrl),
                 ),
               ),
             ],
