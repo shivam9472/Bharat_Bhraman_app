@@ -20,6 +20,7 @@ import '../widgets/handicrafts_carousel.dart';
 import '../widgets/festivals_carousel.dart';
 import '../widgets/performing_arts_carousel.dart';
 import '../widgets/events_carousel.dart';
+import '../widgets/main_drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -88,44 +89,34 @@ class _HomeScreenState extends State<HomeScreen> {
     ];
     return Container(
       decoration: BoxDecoration(
-        image: DecorationImage(
-            image: NetworkImage(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFP-DxC5hZS02en_-8J95MJsU8OCHLB9wZbg&usqp=CAU%27'),
-            fit: BoxFit.cover),
+        gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [Colors.orangeAccent,Colors.yellowAccent]
+        ),
       ),
       child: Scaffold(
+
         appBar: AppBar(
           title: Text("Bharat Bhraman"),
           actions: [
-            FlatButton(
-              child: Text('horders'),
-              onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (ctx) => DestinationOrderScreen(
-                        uid: widget.uid,
-                      ))),
-            ),
-            FlatButton(
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (ctx) => ProfileLandingpage(
-                          uid: widget.uid,
-                        )));
-              },
-              child: Text("Profile"),
-            ),
-            FlatButton(
+//            FlatButton(
+//              child: Text('horders'),
+//              onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+//                  builder: (ctx) => DestinationOrderScreen(
+//                        uid: widget.uid,
+//                      ))),
+//            ),
+
+            IconButton(
+
               onPressed: () => _confirmSignOut(context),
-              child: Text("Logout"),
+              icon: Icon(Icons.logout),
             ),
-            FlatButton(
-              onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (ctx) => OrderScreen(
-                        uid: widget.uid,
-                      ))),
-              child: Text("Order"),
-            )
+
           ],
         ),
+        drawer: MainDrawer(uid: widget.uid),
         body: SafeArea(
           child: ListView(
             padding: EdgeInsets.symmetric(vertical: 20),
