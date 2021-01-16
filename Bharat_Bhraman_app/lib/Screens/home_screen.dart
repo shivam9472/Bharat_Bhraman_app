@@ -25,14 +25,17 @@ import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
   final String uid;
-  HomeScreen({Key key, this.uid}) : super(key: key);
+
+  HomeScreen({
+    Key key,
+    this.uid,
+  }) : super(key: key);
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  Profile profile;
   Future<void> _signOut(BuildContext context) async {
     try {
       final auth = Provider.of<AuthBase>(context);
@@ -92,11 +95,9 @@ class _HomeScreenState extends State<HomeScreen> {
         gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Colors.orangeAccent,Colors.yellowAccent]
-        ),
+            colors: [Colors.orangeAccent, Colors.yellowAccent]),
       ),
       child: Scaffold(
-
         appBar: AppBar(
           title: Text("Bharat Bhraman"),
           actions: [
@@ -109,11 +110,9 @@ class _HomeScreenState extends State<HomeScreen> {
 //            ),
 
             IconButton(
-
               onPressed: () => _confirmSignOut(context),
               icon: Icon(Icons.logout),
             ),
-
           ],
         ),
         drawer: MainDrawer(uid: widget.uid),
