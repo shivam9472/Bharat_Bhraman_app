@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "526073790320",
+    "project_id": "bharatbhraman-b1cfc",
+    "storage_bucket": "bharatbhraman-b1cfc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526073790320:android:c7a3711322207c147059b5",
+        "android_client_info": {
+          "package_name": "com.example.bharat_bhraman_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526073790320-vk85hisp942bf9mmuo88f5g1u04oothv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bharat_bhraman_app",
+            "certificate_hash": "e38fb88cbbec7dcf0e575b016512de91d14c9d22"
+          }
+        },
+        {
+          "client_id": "526073790320-qi4cb3knb7cskj0amertiuq9s950hidq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiVqoUvf_4CTS5gH1S14X_twAc1DjbPzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526073790320-qi4cb3knb7cskj0amertiuq9s950hidq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
