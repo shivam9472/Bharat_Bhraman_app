@@ -98,6 +98,11 @@ class _HomeScreenState extends State<HomeScreen> {
             colors: [Colors.orangeAccent, Colors.yellowAccent]),
       ),
       child: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.message),
+          onPressed: () => Navigator.of(context)
+              .push(MaterialPageRoute(builder: (ctx) => Chatbotscreen())),
+        ),
         appBar: AppBar(
           title: Text("Bharat Bhraman"),
           actions: [
