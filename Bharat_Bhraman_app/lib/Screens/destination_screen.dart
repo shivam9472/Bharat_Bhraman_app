@@ -13,6 +13,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 import 'package:date_format/date_format.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 class DestinationScreen extends StatefulWidget {
   final Destination destination;
@@ -35,6 +37,15 @@ class _DestinationScreenState extends State<DestinationScreen> {
     }
     stars.trim();
     return Text(stars);
+  }
+  
+  _launchURL(String mapkaurl) async {
+    String url = mapkaurl;
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 
   @override
@@ -79,22 +90,9 @@ class _DestinationScreenState extends State<DestinationScreen> {
                       color: Colors.black,
                       onPressed: () => Navigator.pop(context),
                     ),
-                    Row(
-                      children: <Widget>[
-                        IconButton(
-                          icon: Icon(Icons.search),
-                          iconSize: 30.0,
-                          color: Colors.black,
-                          onPressed: () => Navigator.pop(context),
-                        ),
-                        IconButton(
-                          icon: Icon(FontAwesomeIcons.sortAmountDown),
-                          iconSize: 25.0,
-                          color: Colors.black,
-                          onPressed: () => Navigator.pop(context),
-                        ),
-                      ],
-                    ),
+                   
+                  
+                
                   ],
                 ),
               ),
@@ -139,6 +137,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                 child: Icon(
                   Icons.location_on,
                   color: Colors.white70,
+                   onPressed: () => _launchURL(widget.destination.mapUrl),
                   size: 25.0,
                 ),
               ),
