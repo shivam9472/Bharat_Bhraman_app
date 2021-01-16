@@ -115,7 +115,7 @@ class _ChatbotscreenState extends State<Chatbotscreen> {
               children: <Widget>[
                 CircleAvatar(
                   backgroundImage: AssetImage(
-                      data == 0 ? "assets/bot.png" : "assets/user.png"),
+                      data == 0 ? "assets/robot.png" : "assets/default.jpg"),
                 ),
                 SizedBox(
                   width: 10.0,
