@@ -23,6 +23,8 @@ import '../widgets/events_carousel.dart';
 import '../widgets/main_drawer.dart';
 import 'package:flutter/material.dart';
 
+import 'chatbotscreen.dart';
+
 class HomeScreen extends StatefulWidget {
   final String uid;
 
