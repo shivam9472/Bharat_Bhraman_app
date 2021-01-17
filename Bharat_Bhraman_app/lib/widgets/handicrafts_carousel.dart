@@ -44,7 +44,7 @@ class HandicraftsCarousel extends StatelessWidget {
                 ),
                 child: Container(
                   margin: EdgeInsets.all(10.0),
-                  width: MediaQuery.of(context).size.width * 0.6,
+                  width: MediaQuery.of(context).size.width * 0.45,
                   child: Stack(
                     alignment: Alignment.topCenter,
                     children: <Widget>[
@@ -54,20 +54,21 @@ class HandicraftsCarousel extends StatelessWidget {
                           height: 100.0,
                           width: 240.0,
                           decoration: BoxDecoration(
-                            color: Colors.white70,
+                            color: Colors.transparent,
                             borderRadius: BorderRadius.circular(10.0),
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.end,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: <Widget>[
                                 Text(
                                   handicraft.name,
                                   style: TextStyle(
                                     fontSize: 22.0,
                                     fontWeight: FontWeight.w600,
-                                    letterSpacing: 1.2,
+                                    letterSpacing: 0.5,
                                   ),
                                 ),
                                 SizedBox(height: 2.0),
@@ -90,13 +91,13 @@ class HandicraftsCarousel extends StatelessWidget {
                           boxShadow: [
                             BoxShadow(
                               color: Colors.black26,
-                              offset: Offset(0.0, 2.0),
+                              offset: Offset(0.0, 5.0),
                               blurRadius: 6.0,
                             ),
                           ],
                         ),
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(100.0),
+                          borderRadius: BorderRadius.circular(50.0),
                           child: Image(
                             height: 200.0,
                             width: 220.0,
