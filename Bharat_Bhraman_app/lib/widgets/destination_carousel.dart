@@ -45,7 +45,7 @@ class DestinationCarousel extends StatelessWidget {
                 ),
                 child: Container(
                   margin: EdgeInsets.all(10.0),
-                  width: 210.0,
+                  width: MediaQuery.of(context).size.width*0.45,
                   child: Stack(
                     alignment: Alignment.topCenter,
                     children: <Widget>[
@@ -55,13 +55,13 @@ class DestinationCarousel extends StatelessWidget {
                           height: 100.0,
                           width: 200.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Colors.transparent,
                             borderRadius: BorderRadius.circular(10.0),
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
                             child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: <Widget>[
                                 Text(
                                   destination.city,
@@ -73,7 +73,9 @@ class DestinationCarousel extends StatelessWidget {
                                   ),
                                 ),
                                 Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
+
                                     Icon(
                                       FontAwesomeIcons.locationArrow,
                                       size: 10.0,
